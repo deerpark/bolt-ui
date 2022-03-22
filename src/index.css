@@ -8,17 +8,41 @@ body {
 
 /* Button */
 .bx-button {
-  @apply relative flex items-stretch outline-none;
+  @apply min-w-[32px] h-8 text-sm gap-x-2 relative flex items-stretch outline-none;
+}
+.bx-button-block {
+  @apply w-full;
+}
+.bx-button-small {
+  @apply min-w-[24px] h-6;
+}
+.bx-button-large {
+  @apply min-w-[40px] h-10;
 }
 .bx-button-label {
   @apply m-[3px] mt-0 active:mt-0.5 focus:mt-0.5 relative z-10 px-2.5 flex flex-nowrap whitespace-nowrap gap-x-1 justify-center items-center bg-white dark:bg-slate-500 hover:bg-slate-100 active:bg-blue-50 focus:bg-blue-50 dark:hover:bg-slate-400 dark:active:bg-slate-300 dark:focus:bg-slate-300 text-slate-600 dark:text-slate-900 hover:text-slate-500 dark:hover:text-slate-800 border rounded border-slate-300 dark:border-slate-900 font-bold transition-all;
+}
+.bx-button-block .bx-button-label {
+  @apply w-full;
+}
+.bx-button-small .bx-button-label {
+  @apply gap-x-1 text-xs;
+}
+.bx-button-large .bx-button-label {
+  @apply gap-x-3 text-base;
 }
 .bx-button-group > a:active .bx-button-label,
 .bx-button-group > a:active .bx-button-label {
   @apply mt-0.5 bg-blue-50 dark:bg-slate-300;
 }
 .bx-button-icon {
-  @apply flex-none;
+  @apply flex-none w-4 h-4;
+}
+.bx-button-small .bx-button-label {
+  @apply w-3 h-3;
+}
+.bx-button-large .bx-button-label {
+  @apply w-6 h-6;
 }
 .bx-button-icon svg {
   @apply w-full h-full fill-slate-500 dark:fill-slate-900;
