@@ -40,7 +40,7 @@ export default function Button({
 }: ButtonProps) {
   return href ? (
     <a key={href} href={href}>
-      <button type={type} className={`bx-button ${classes[size]} ${block ? classes['block'] : ''}`}>
+      <button type={type} className={`bx-button ${classes[size]} ${block ? classes.block : ''}`}>
         <span className={`bx-button-label`}>
           {icon && <span className='bx-button-icon'>{icon}</span>}
           {children && <span className='bx-button-text'>{children}</span>}
@@ -49,7 +49,7 @@ export default function Button({
       </button>
     </a>
   ) : onClick ? (
-    <button type={type} className={`bx-button ${classes[size]} ${block ? classes['block'] : ''}`} onClick={onClick}>
+    <button type={type} className={`bx-button ${classes[size]} ${block ? classes.block : ''}`} onClick={onClick}>
       <span className={`bx-button-label`}>
         {icon && <span className='bx-button-icon'>{icon}</span>}
         {children && <span className='bx-button-text'>{children}</span>}
@@ -57,7 +57,7 @@ export default function Button({
       <span className='bx-button-background'></span>
     </button>
   ) : (
-    <button type={type} className={`bx-button ${classes[size]} ${block ? classes['block'] : ''}`}>
+    <button type={type} className={`bx-button ${classes[size]} ${block ? classes.block : ''}`}>
       <span className={`bx-button-label`}>
         {icon && <span className='bx-button-icon'>{icon}</span>}
         {children && <span className='bx-button-text'>{children}</span>}

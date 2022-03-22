@@ -6,7 +6,9 @@ import reportWebVitals from './reportWebVitals'
 
 ReactDOM.render(
   <React.StrictMode>
-    <Button>Button</Button>
+    <Button size='small'>Button</Button>
+    <Button size='default'>Button</Button>
+    <Button size='large'>Button</Button>
   </React.StrictMode>,
   document.getElementById('root')
 )
