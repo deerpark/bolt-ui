@@ -1,3 +1,42 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  @apply bg-slate-200;
+}
+
+
+/* Button */
+.bx-button {
+  @apply relative flex items-stretch outline-none;
+}
+.bx-button-label {
+  @apply m-[3px] mt-0 active:mt-0.5 focus:mt-0.5 relative z-10 px-2.5 flex flex-nowrap whitespace-nowrap gap-x-1 justify-center items-center bg-white dark:bg-slate-500 hover:bg-slate-100 active:bg-blue-50 focus:bg-blue-50 dark:hover:bg-slate-400 dark:active:bg-slate-300 dark:focus:bg-slate-300 text-slate-600 dark:text-slate-900 hover:text-slate-500 dark:hover:text-slate-800 border rounded border-slate-300 dark:border-slate-900 font-bold transition-all;
+}
+.bx-button-group > a:active .bx-button-label,
+.bx-button-group > a:active .bx-button-label {
+  @apply mt-0.5 bg-blue-50 dark:bg-slate-300;
+}
+.bx-button-icon {
+  @apply flex-none;
+}
+.bx-button-icon svg {
+  @apply w-full h-full fill-slate-500 dark:fill-slate-900;
+}
+.bx-button-text {
+  @apply grow;
+}
+.bx-button-background {
+  @apply absolute inset-0 top-[3px] z-0 bg-slate-200 dark:bg-slate-700 border rounded border-slate-300 dark:border-slate-900;
+}
+/* Button Group */
+.bx-button-group {
+  @apply inline-flex relative;
+}
+.bx-button-group > * + *:not(.bx-button-background) {
+  @apply -ml-1;
+}
+.bx-button-group .bx-button .bx-button-background {
+  @apply hidden;
+}

@@ -8,6 +8,9 @@
   "types": "dist/index.d.ts",
   "version": "0.1.0",
   "private": true,
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/deerpark"
+  },
   "peerDependencies": {
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
