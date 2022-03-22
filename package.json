@@ -38,7 +38,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "rollup": "rm -rf ./dist && rollup -c",
+    "tailwind": "tailwindcss -i src/index.css -o dist/index.css -m",
+    "rollup": "rm -rf ./dist && rollup -c && npm run tailwind",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "prepare": "npm run rollup"
