@@ -1,5 +1,5 @@
 
-![BOLT UI](https://github.com/deerpark/bolt-ui/blob/main/public/images/sns.png)
+![BOLT UI](https://raw.githubusercontent.com/deerpark/bolt-ui/main/public/images/sns.png)
 
 # BOLT UI
 
