@@ -1,0 +1,19 @@
+{
+    "name": "BOLT UI",
+    "short_name": "BOLT UI",
+    "icons": [
+        {
+            "src": "imaegs/android-chrome-192x192.png?v=20220313",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "imaegs/android-chrome-512x512.png?v=20220313",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#f8fafc",
+    "background_color": "#f8fafc",
+    "display": "standalone"
+}

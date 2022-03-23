@@ -1,3 +1,6 @@
+
+<img loading="lazy" alt="BOLT-UI" src="public/sns.png" />
+
 # BOLT UI
 
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/mui/material-ui/blob/HEAD/LICENSE)
