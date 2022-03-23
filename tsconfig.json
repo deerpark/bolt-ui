@@ -24,6 +24,6 @@
     "typeRoots": ["index.d.ts", "node_modules/@types"]
   },
   "include": [
-    "src/Button"
+    "src/components"
   ]
 }
