@@ -1,5 +1,5 @@
 
-<img loading="lazy" alt="BOLT-UI" src="public/sns.png" />
+![BOLT UI](https://github.com/deerpark/bolt-ui/blob/main/public/images/sns.png)
 
 # BOLT UI
 
@@ -9,6 +9,8 @@
 ## Demo
 
 [Story Book](https://bolt-ui.vercel.app/)
+
+[BOLT UX](https://bolt-ux.com/)
 
 ## Installation
 BOLT UI is available as an [npm package](https://github.com/deerpark/bolt-ui/packages/1319858).
@@ -28,6 +30,9 @@ import '@deerpark/bolt-ui/dist/index.css'
 function App() {
   return (
     <ButtonGroup>
+      <Button size="small">
+        Hello World
+      </Button>
       <Button size="small">
         Hello World
       </Button>
