@@ -8,7 +8,7 @@ const packageJson = require('./package.json')
 // eslint-disable-next-line import/no-anonymous-default-export
 export default [
   {
-    input: 'src/Button/index.ts',
+    input: 'src/components/index.ts',
     output: [
       {
         file: packageJson.main,
