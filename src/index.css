@@ -111,7 +111,7 @@
     @apply flex grow flex-col gap-y-8;
   }
   .bx-nav-category {
-    @apply text-slate-400 text-2xs font-black mb-2.5 px-8;
+    @apply text-slate-400 dark:text-slate-700 text-2xs font-black mb-2.5 px-8;
   }
   .bx-nav-children {
     @apply flex flex-col;
