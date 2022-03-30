@@ -101,7 +101,10 @@
   .bx-button-active .bx-button-label,
   .bx-button-group > a:active .bx-button-label,
   .bx-button-group > a:focus .bx-button-label {
-    @apply mt-0.5 bg-blue-200 dark:bg-slate-500 text-slate-600 dark:text-slate-800;
+    @apply mt-0.5 bg-blue-100 dark:bg-slate-500 border-slate-400/70 dark:border-slate-900/60 text-slate-600 dark:text-slate-800;
+  }
+  .bx-button-active .bx-button-label {
+    @apply mt-0;
   }
   .bx-button-active svg {
     @apply fill-slate-600 dark:fill-slate-800;
