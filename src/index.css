@@ -110,8 +110,8 @@
     @apply fill-slate-500 dark:fill-slate-900;
   }
   .bx-button-active svg,
-  .bx-button-label:active svg
-  .bx-button-label:focus svg {
+  .bx-button:active svg
+  .bx-button:focus svg {
     @apply fill-slate-600 dark:fill-slate-800;
   }
 
