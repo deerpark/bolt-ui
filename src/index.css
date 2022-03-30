@@ -61,7 +61,7 @@
     @apply min-w-[40px] h-10;
   }
   .bx-button-label {
-    @apply m-[3px] mt-0 active:mt-0.5 focus:mt-0.5 relative z-10 px-2.5 flex flex-nowrap whitespace-nowrap gap-x-1 justify-center items-center bg-white dark:bg-slate-900/50 hover:bg-slate-100 active:bg-blue-50 focus:bg-blue-50 dark:hover:bg-blue-800/50 dark:active:bg-blue-800/70 dark:focus:bg-blue-800/70 text-slate-600 dark:text-slate-700 hover:text-slate-500 dark:hover:text-slate-600 border rounded border-slate-300 dark:border-slate-900/50 font-bold transition-all;
+    @apply m-[3px] mt-0 active:mt-0.5 focus:mt-0.5 relative z-10 px-2.5 flex flex-nowrap whitespace-nowrap gap-x-1 justify-center items-center bg-white dark:bg-slate-700 hover:bg-slate-100 active:bg-blue-100 focus:bg-blue-100 dark:hover:bg-slate-600 dark:active:bg-slate-500 dark:focus:bg-slate-500 text-slate-600 dark:text-slate-400/80 hover:text-slate-500 dark:hover:text-slate-300 active:text-slate-600 focus:text-slate-600 dark:active:text-slate-800 dark:focus:text-slate-800 border rounded border-slate-300 hover:border-slate-400/50 active:border-slate-400/70 focus:border-slate-400/70 dark:border-slate-900/80 dark:hover:border-slate-900/70 dark:active:border-slate-900/60 dark:focus:border-slate-900/60 font-bold transition-all;
   }
   .bx-button-block .bx-button-label {
     @apply w-full;
@@ -71,13 +71,6 @@
   }
   .bx-button-large .bx-button-label {
     @apply gap-x-3 text-base;
-  }
-
-  /* 버튼 눌렀을때 */
-  .bx-button-active .bx-button-label,
-  .bx-button-group > a:active .bx-button-label,
-  .bx-button-group > a:focus .bx-button-label {
-    @apply mt-0.5 bg-blue-50 dark:bg-blue-900/50;
   }
   .bx-button-icon {
     @apply flex-none w-4 h-4;
@@ -95,7 +88,23 @@
     @apply grow;
   }
   .bx-button-background {
-    @apply absolute inset-0 top-[3px] z-0 bg-slate-200 dark:bg-slate-900/30 border rounded border-slate-300 dark:border-slate-900/40;
+    @apply absolute inset-0 top-[3px] z-0 bg-slate-200 dark:bg-slate-800 border rounded border-slate-300 dark:border-slate-700/50;
+  }
+
+  .bx-button-active .bx-button-background,
+  .bx-button-label:active ~ .bx-button-background,
+  .bx-button-label:focus ~ .bx-button-background {
+    @apply bg-slate-300 border-slate-400/50 dark:bg-slate-700 dark:border-slate-600/60;
+  }
+
+  /* 버튼 눌렀을때 */
+  .bx-button-active .bx-button-label,
+  .bx-button-group > a:active .bx-button-label,
+  .bx-button-group > a:focus .bx-button-label {
+    @apply mt-0.5 bg-blue-200 dark:bg-slate-500;
+  }
+  .bx-button-active svg {
+    @apply fill-slate-600 dark:fill-slate-800;
   }
 
   /* Button Group */

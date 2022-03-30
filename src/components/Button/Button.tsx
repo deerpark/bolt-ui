@@ -46,7 +46,7 @@ export default function Button({
     <a key={href} href={href}>
       <button
         type={type}
-        className={`bx-button ${className} ${classes[size]} ${block ? classes.block : ''} ${
+        className={`bx-button ${className ? className : ''} ${classes[size]} ${block ? classes.block : ''} ${
           isActive ? 'bx-button-active' : ''
         }`}
       >
@@ -60,7 +60,7 @@ export default function Button({
   ) : onClick ? (
     <button
       type={type}
-      className={`bx-button ${className} ${classes[size]} ${block ? classes.block : ''} ${
+      className={`bx-button ${className ? className : ''} ${classes[size]} ${block ? classes.block : ''} ${
         isActive ? 'bx-button-active' : ''
       }`}
       onClick={onClick}
@@ -74,7 +74,7 @@ export default function Button({
   ) : (
     <button
       type={type}
-      className={`bx-button ${className} ${classes[size]} ${block ? classes.block : ''} ${
+      className={`bx-button ${className ? className : ''} ${classes[size]} ${block ? classes.block : ''} ${
         isActive ? 'bx-button-active' : ''
       }`}
     >
@@ -89,7 +89,7 @@ export default function Button({
 
 export function ButtonGroup({ children, className }: ButtonGroupProps) {
   return (
-    <div className={`bx-button-group ${className}`}>
+    <div className={`bx-button-group ${className ? className : ''}`}>
       {children}
       <span className='bx-button-background' />
     </div>
