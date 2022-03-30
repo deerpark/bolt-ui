@@ -61,7 +61,7 @@
     @apply min-w-[40px] h-10;
   }
   .bx-button-label {
-    @apply m-[3px] mt-0 active:mt-0.5 focus:mt-0.5 relative z-10 px-2.5 flex flex-nowrap whitespace-nowrap gap-x-1 justify-center items-center bg-white dark:bg-slate-700 hover:bg-slate-100 active:bg-blue-100 focus:bg-blue-100 dark:hover:bg-slate-600 dark:active:bg-slate-500 dark:focus:bg-slate-500 text-slate-600 dark:text-slate-400/80 hover:text-slate-500 dark:hover:text-slate-300 active:text-slate-800 focus:text-slate-800 dark:active:text-slate-800 dark:focus:text-slate-800 border rounded border-slate-300 hover:border-slate-400/50 active:border-slate-400/70 focus:border-slate-400/70 dark:border-slate-900/80 dark:hover:border-slate-900/70 dark:active:border-slate-900/60 dark:focus:border-slate-900/60 font-bold transition-all;
+    @apply m-[3px] mt-0 active:mt-0.5 focus:mt-0.5 relative z-10 px-2.5 flex flex-nowrap whitespace-nowrap gap-x-1 justify-center items-center bg-white dark:bg-slate-700 hover:bg-slate-100 active:bg-blue-100 focus:bg-blue-100 dark:hover:bg-slate-600 dark:active:bg-slate-500 dark:focus:bg-slate-500 text-slate-600 dark:text-black/80 hover:text-slate-500 dark:hover:text-slate-300 active:text-slate-800 focus:text-slate-800 dark:active:text-slate-800 dark:focus:text-slate-800 border rounded border-slate-300 hover:border-slate-400/50 active:border-slate-400/70 focus:border-slate-400/70 dark:border-slate-900/80 dark:hover:border-slate-900/70 dark:active:border-slate-900/60 dark:focus:border-slate-900/60 font-bold transition-all;
   }
   .bx-button-block .bx-button-label {
     @apply w-full;
@@ -82,7 +82,7 @@
     @apply w-6 h-6;
   }
   .bx-button-icon svg {
-    @apply w-full h-full fill-slate-500 dark:fill-slate-700;
+    @apply w-full h-full fill-slate-500 dark:fill-black/80;
   }
   .bx-button-text {
     @apply grow;
@@ -94,7 +94,7 @@
   .bx-button-active .bx-button-background,
   .bx-button-label:active ~ .bx-button-background,
   .bx-button-label:focus ~ .bx-button-background {
-    @apply bg-slate-300 border-slate-400/50 dark:bg-slate-700 dark:border-slate-600/60;
+    @apply bg-slate-300 border-slate-400/50 dark:bg-slate-700 dark:border-slate-900;
   }
 
   /* 버튼 눌렀을때 */
