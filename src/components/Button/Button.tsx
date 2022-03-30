@@ -8,6 +8,8 @@ type ButtonProps = {
   type?: 'submit' | 'button',
   onClick?: () => void,
   block?: boolean,
+  isActive?: boolean,
+  className?: string,
 }
 
 type ButtonGroupProps = {
@@ -37,32 +39,50 @@ export default function Button({
   icon,
   block = false,
   children,
+  className,
+  isActive,
 }: ButtonProps) {
   return href ? (
     <a key={href} href={href}>
-      <button type={type} className={`bx-button ${classes[size]} ${block ? classes.block : ''}`}>
+      <button
+        type={type}
+        className={`bx-button ${className} ${classes[size]} ${block ? classes.block : ''} ${
+          isActive ? 'bx-button-active' : ''
+        }`}
+      >
         <span className={`bx-button-label`}>
           {icon && <span className='bx-button-icon'>{icon}</span>}
           {children && <span className='bx-button-text'>{children}</span>}
         </span>
-        <span className='bx-button-background'></span>
+        <span className='bx-button-background' />
       </button>
     </a>
   ) : onClick ? (
-    <button type={type} className={`bx-button ${classes[size]} ${block ? classes.block : ''}`} onClick={onClick}>
+    <button
+      type={type}
+      className={`bx-button ${className} ${classes[size]} ${block ? classes.block : ''} ${
+        isActive ? 'bx-button-active' : ''
+      }`}
+      onClick={onClick}
+    >
       <span className={`bx-button-label`}>
         {icon && <span className='bx-button-icon'>{icon}</span>}
         {children && <span className='bx-button-text'>{children}</span>}
       </span>
-      <span className='bx-button-background'></span>
+      <span className='bx-button-background' />
     </button>
   ) : (
-    <button type={type} className={`bx-button ${classes[size]} ${block ? classes.block : ''}`}>
+    <button
+      type={type}
+      className={`bx-button ${className} ${classes[size]} ${block ? classes.block : ''} ${
+        isActive ? 'bx-button-active' : ''
+      }`}
+    >
       <span className={`bx-button-label`}>
         {icon && <span className='bx-button-icon'>{icon}</span>}
         {children && <span className='bx-button-text'>{children}</span>}
       </span>
-      <span className='bx-button-background'></span>
+      <span className='bx-button-background' />
     </button>
   )
 }
@@ -71,7 +91,7 @@ export function ButtonGroup({ children, className }: ButtonGroupProps) {
   return (
     <div className={`bx-button-group ${className}`}>
       {children}
-      <span className='bx-button-background'></span>
+      <span className='bx-button-background' />
     </div>
   )
 }

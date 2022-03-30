@@ -72,8 +72,9 @@
   .bx-button-large .bx-button-label {
     @apply gap-x-3 text-base;
   }
+  .bx-button-active .bx-button-label,
   .bx-button-group > a:active .bx-button-label,
-  .bx-button-group > a:active .bx-button-label {
+  .bx-button-group > a:focus .bx-button-label {
     @apply mt-0.5 bg-blue-50 dark:bg-slate-300;
   }
   .bx-button-icon {
